@@ -220,6 +220,8 @@ return db.User.findOne({
 //deleteMyAccount
 
 const deleteMyAccount = (acno)=>{
+    console.log('Inside deleteMyAccount fn');
+
     return db.User.deleteOne({
         acno
     })
